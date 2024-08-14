@@ -7,8 +7,13 @@ const Navbar = () => {
   const navigate = useNavigate();
 
   const handleSearch = () => {
-    // actualiza la URL de la aplicación para incluir el término de búsqueda como un parámetro de consulta. Esto permitirá que el componente que maneja la ruta correspondiente lea el término de búsqueda desde la URL 
-    navigate(`/?pokemon=${searchTerm}`);
+    if (searchTerm.trim() === '') {
+      // Generar un nuevo ID de Pokémon al azar si la barra de búsqueda está vacía
+      const randomId = Math.floor(Math.random() * 898) + 1;
+      navigate(`/?pokemon=${randomId}`);
+    } else {
+      navigate(`/?pokemon=${searchTerm}`);
+    }
   };
 
   return (
