@@ -15,7 +15,7 @@ const PokemonCard = ({ pokemon }) => {
 };
 
 PokemonCard.propTypes = {
-    pokemon: PropTypes.string.isRequired
+    pokemon: PropTypes.object.isRequired
   };
 
 
