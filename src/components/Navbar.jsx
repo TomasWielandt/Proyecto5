@@ -13,7 +13,7 @@ const Navbar = () => {
 
   return (
     <div className="bg-blue-600 text-black p-4 flex items-center justify-between">
-      <img src="src\assets\logo.png" alt="Pokemon Logo" className="w-20" />
+      <img src="src\assets\logo.png" alt="Pokemon Logo" className="w-32" />
       <div className="flex items-center">
         <input
           type="text"
