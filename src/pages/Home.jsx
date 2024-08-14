@@ -21,7 +21,7 @@ const Home = () => {
         // si hay un valor en query, se usa ese valor (el nombre del Pokémon). Si no, se genera un ID aleatorio entre 1 y 898 para obtener un Pokémon al azar.
         const id = query ? query.toLowerCase() : Math.floor(Math.random() * 898) + 1;
         const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`);
-        if (!response.ok) throw new Error('Failed to fetch Pokémon');
+        if (!response.ok) throw new Error('Pokémon not found');
 
         const data = await response.json();
         setPokemon(data);
