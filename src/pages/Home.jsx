@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { useSearchParams } from 'react-router-dom';
 import PokemonCard from '../components/PokemonCard';
 
 const Home = () => {
@@ -7,7 +8,7 @@ const Home = () => {
   const [error, setError] = useState(null);
 
   // Obtener parámetros de búsqueda
-  const searchParams = new URLSearchParams(window.location.search);
+  const [searchParams] = useSearchParams();
   const query = searchParams.get('pokemon');
 
   // se usa para obtener los datos del Pokémon cada vez que query cambia
