@@ -9,14 +9,17 @@ function App() {
   return (
     <Router>
       <ErrorBoundary>
-      <div className="flex flex-col min-h-screen">
-      <Navbar />
-        <div className="p-4 flex-grow flex justify-center items-center">
-          <Routes>
-            <Route path="/" element={<Home />} />
-          </Routes>
-        </div>
+      <div className="flex flex-col min-h-screen bg-cover bg-center relative" style={{ backgroundImage: `url('src/assets/fondo.jpg')` }}>
+      <div className="absolute inset-0 bg-white opacity-15"></div>
+      <div className="relative flex flex-col flex-grow">
+        <Navbar />
+          <div className="flex-grow flex justify-center items-center p-4">
+            <Routes>
+              <Route path="/" element={<Home />} />
+            </Routes>
+          </div>
         <Footer />
+      </div>
       </div>
       </ErrorBoundary>
     </Router>
