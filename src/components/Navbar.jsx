@@ -18,7 +18,7 @@ const Navbar = () => {
 
   return (
     <div className="bg-blue-600 text-black p-4 flex items-center justify-between border-b-2 border-slate-400">
-      <img src="src\assets\logo.png" alt="Pokemon Logo" className="w-32" />
+      <img src="https://res.cloudinary.com/dfxlipbvl/image/upload/v1723759619/logo_bks99d.png" alt="Pokemon Logo" className="w-32" />
       <div className="flex items-center">
         <input
           type="text"

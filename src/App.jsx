@@ -9,7 +9,7 @@ function App() {
   return (
     <Router>
       <ErrorBoundary>
-      <div className="flex flex-col min-h-screen bg-cover bg-center relative" style={{ backgroundImage: `url('src/assets/fondo.jpg')` }}>
+      <div className="flex flex-col min-h-screen bg-cover bg-center relative" style={{ backgroundImage: `url('https://res.cloudinary.com/dfxlipbvl/image/upload/v1723759608/fondo_ejyigq.jpg')` }}>
       <div className="absolute inset-0 bg-white opacity-15"></div>
       <div className="relative flex flex-col flex-grow">
         <Navbar />
