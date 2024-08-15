@@ -10,6 +10,25 @@ const PokemonCard = ({ pokemon }) => {
       <p className="mb-2">Height: {pokemon.height}</p>
       <p className="mb-2">Weight: {pokemon.weight}</p>
       <p className="mb-2">Base Experience: {pokemon.base_experience}</p>
+      <p className="mb-2">Abilities: {pokemon.abilities.map((ability, index) => (
+            <span key={index}>
+              {ability.ability.name}
+              {index < pokemon.abilities.length - 1 ? ', ' : ''}
+            </span>
+       ))}</p>
+      <p className="mb-2">Forms: {pokemon.forms.map((form, index) => (
+            <span key={index}>
+              {form.name}
+              {index < pokemon.forms.length - 1 ? ', ' : ''}
+            </span>
+       ))}</p>
+      {/* al ser mucho moves, dejé que mostrara 3 como máximo */}
+      <p className="mb-2">Moves: {pokemon.moves.slice(0, 3).map((move, index) => (
+            <span key={index}>
+              {move.move.name}
+              {index < pokemon.moves.slice(0, 3).length - 1 ? ', ' : ' ...'}
+            </span>
+       ))}</p>  
     </div>
   );
 };
