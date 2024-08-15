@@ -28,7 +28,7 @@ const Navbar = () => {
         />
         <button
           onClick={handleSearch}
-          className="bg-yellow-400 text-black p-2 rounded hover:bg-yellow-500 active:bg-yellow-600"
+          className="bg-yellow-400 text-black p-2 rounded hover:bg-yellow-500 active:bg-yellow-600 border-black border-2"
         >
           Search
         </button>
