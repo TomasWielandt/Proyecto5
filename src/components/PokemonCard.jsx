@@ -16,17 +16,18 @@ const PokemonCard = ({ pokemon }) => {
               {index < pokemon.abilities.length - 1 ? ', ' : ''}
             </span>
        ))}</p>
-      <p className="mb-2">Forms: {pokemon.forms.map((form, index) => (
+      {/* si son muchos forms, se mostrara 3 como máximo */}
+      <p className="mb-2">Forms: {pokemon.forms.slice(0, 3).map((form, index) => (
             <span key={index}>
               {form.name}
-              {index < pokemon.forms.length - 1 ? ', ' : ''}
+              {index < pokemon.forms.slice(0, 3).length - 1 ? ', ' : ''}
             </span>
        ))}</p>
       {/* al ser mucho moves, dejé que mostrara 3 como máximo */}
       <p className="mb-2">Moves: {pokemon.moves.slice(0, 3).map((move, index) => (
             <span key={index}>
               {move.move.name}
-              {index < pokemon.moves.slice(0, 3).length - 1 ? ', ' : ' ...'}
+              {index < pokemon.moves.slice(0, 3).length - 1 ? ', ' : ''}
             </span>
        ))}</p>  
     </div>
