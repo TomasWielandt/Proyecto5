@@ -17,7 +17,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="bg-blue-600 text-black p-4 flex items-center justify-between">
+    <div className="bg-blue-600 text-black p-4 flex items-center justify-between border-b-4 border-slate-300">
       <img src="src\assets\logo.png" alt="Pokemon Logo" className="w-32" />
       <div className="flex items-center">
         <input
@@ -28,7 +28,7 @@ const Navbar = () => {
         />
         <button
           onClick={handleSearch}
-          className="bg-yellow-400 text-black p-2 rounded"
+          className="bg-yellow-400 text-black p-2 rounded hover:bg-yellow-500 active:bg-yellow-600"
         >
           Search
         </button>
