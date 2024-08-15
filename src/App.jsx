@@ -2,6 +2,7 @@ import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import ErrorBoundary from "./components/ErrorBoundary";
+import Footer from "./components/Footer";
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
             <Route path="/" element={<Home />} />
           </Routes>
         </div>
+        <Footer />
       </ErrorBoundary>
     </Router>
   )
