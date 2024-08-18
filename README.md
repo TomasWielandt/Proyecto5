@@ -3,13 +3,13 @@
 # Proyecto 5: Aplicación Web con React
 
 ## Índice
-1. [¿Qué construirás?](#qué-construirás)
-2. [Objetivos](#objetivos)
-3. [Requisitos](#requisitos)
-4. [Planteamiento](#planteamiento)
-5. [Despliegue](#despliegue)
-6. [Solución](#solución)
-7. [Contacto](#contacto)
+1. [¿Qué construirás?](#1-qué-construirás)
+2. [Objetivos](#2-objetivos)
+3. [Requisitos](#3-requisitos)
+4. [Planteamiento](#4-planteamiento)
+5. [Despliegue](#5-despliegue)
+6. [Solución](#6-solución)
+7. [Contacto](#7-contacto)
 
 ___
 
