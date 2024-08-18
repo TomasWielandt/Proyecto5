@@ -215,7 +215,7 @@ export default Home;
 
 ```
 
-- **Navbar.jsx **: barra de navegación para hacer la busqueda a traves de una barra de texto y un botón.
+- **Navbar.jsx**: barra de navegación para hacer la busqueda a traves de una barra de texto y un botón.
 
 [![navbar.png](https://i.postimg.cc/TYF2LNnS/navbar.png)](https://postimg.cc/8jdgxHKB)
 
