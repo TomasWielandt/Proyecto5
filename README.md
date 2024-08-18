@@ -3,7 +3,7 @@
 # Proyecto 5: Aplicación Web con React
 
 ## Índice
-1. [¿Qué construirás?](#¿qué-construirás?)
+1. [¿Qué construirás?](#qué-construirás)
 2. [Objetivos](#objetivos)
 3. [Requisitos](#requisitos)
 4. [Planteamiento](#planteamiento)
@@ -377,7 +377,7 @@ export default App
 
 ```
 
-## Contacto
+## 7. Contacto
 
 Tomás Wielandt<br>
 twielandt16@gmail.com
